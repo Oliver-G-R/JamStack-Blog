@@ -14,8 +14,12 @@ html{
 }
 
 .global-container{
-    max-width: 90rem;
+    max-width: 100rem;
     margin: 0 auto;
+}
+
+.spacing-section{
+    margin-bottom: 15rem;
 }
 
 h1{
@@ -37,7 +41,7 @@ body{
 }
 
   
-@media screen and (max-width: 966px){
+@media screen and (max-width: 1116px){
     .global-container{
       max-width: 90%;
     }

@@ -1,26 +1,23 @@
+import Link from 'next/link'
+
 export const NavBar = () => {
   return (
         <>
             <header>
                 <nav>
                     <span>
-                        Ogr
+                        O
                     </span>
                     <ul>
                         <li>
-                            <a href="">
-                                About
-                            </a>
+                            <Link href="/">
+                                <a>About</a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="">
-                                Contact
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Blog
-                            </a>
+                            <Link href="/">
+                                <a>Contact</a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>
@@ -36,7 +33,7 @@ export const NavBar = () => {
 
                     nav{
                         display: flex;
-                        padding: 2rem 4rem;
+                        padding: 1rem 4rem;
                         align-items: center;
                         justify-content: space-between;
 
@@ -46,11 +43,9 @@ export const NavBar = () => {
                             li a{
                                 color: var(--description-color);
                                 font-size: 1.8rem;
-                                font-weight: 500;
+                                font-weight: 700;
                             }
                         }
-
-
                     }
 
                     nav span{
@@ -59,15 +54,14 @@ export const NavBar = () => {
                         align-items: center;
                         background: var(--bg-gradient);
                         color: #fff;
-                        width: 4rem;
-                        font-weight: 300;
-                        font-size: 2rem;
-                        padding: 2.4rem;
-                        height: 4rem;
+                        width: 3rem;
+                        height: 3rem;
+                        font-weight: 700;
+
+                        font-size: 2.5rem;
+                        padding: 2.5rem;
                         border-radius: 50%;
                     }
-
-                    
                 }
             `}</style>
         </>
