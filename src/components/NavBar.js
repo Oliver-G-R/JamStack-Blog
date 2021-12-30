@@ -26,7 +26,18 @@ export const NavBar = () => {
                 </nav>
             </header>
             <style jsx>{`
+                header{
+                    position: fixed;
+                    z-index: 3;
+                    top: 0;
+                    left: 0;
+                    right: 0;
 
+                    nav{
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
             `}</style>
         </>
   )
