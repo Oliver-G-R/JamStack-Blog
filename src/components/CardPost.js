@@ -4,11 +4,12 @@ export const CardPost = ({
   img,
   date,
   title,
-  description
+  description,
+  slug
 }) => {
   return (
         <>
-            <Link href="/">
+            <Link href={`/${slug}`}>
                <a>
                     {img
                       ? <img src={img} alt={title} />
