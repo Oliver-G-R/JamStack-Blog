@@ -1,17 +1,19 @@
-/* colors */
-$bg-primary: #E4E6EC;
-$bg-gradient: linear-gradient(to bottom, #F5716F 0%, #7160E5 100%);
+:root{
+    /* colors */
+   --bg-primary: #E4E6EC;
+   --bg-gradient: linear-gradient(to bottom, #F5716F 0%, #7160E5 100%);
 
-$color-primary: #F5716F;
-$color-secondary: #7160E5;
+   --color-primary: #F5716F;
+   --color-secondary: #7160E5;
 
-$title-color: #131313;
-$description-color: #6F757F;
+   --title-color: #131313;
+   --description-color: #6F757F;
 
 
-/* foont size */
-$font-size-base: 1.6rem;
-$font-size-h1: 3rem;
-$font-size-h2: 2.5rem;
-$font-size-h3: 2rem;
+    /* foont size */
+   --font-size-base: 1.6rem;
+   --font-size-h1: 3rem;
+   --font-size-h2: 2.5rem;
+   --font-size-h3: 2rem;
 
+}

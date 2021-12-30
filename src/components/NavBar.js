@@ -32,6 +32,7 @@ export const NavBar = () => {
                     top: 0;
                     left: 0;
                     right: 0;
+                    background-color: var(--bg-primary);
 
                     nav{
                         display: flex;

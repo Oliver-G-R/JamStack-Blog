@@ -11,6 +11,9 @@ export default function Home () {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar/>
+      <h1>
+        lorem
+      </h1>
     </div>
   )
 }

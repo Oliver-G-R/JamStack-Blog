@@ -1,4 +1,3 @@
-
 *{
     box-sizing: border-box;
     list-style: none;
@@ -34,7 +33,7 @@ h3{
 body{
     font-family: 'Quicksand', sans-serif;
     font-size: 1.6rem;
-    background-color: $bg-primary;
+    background-color: var(--bg-primary);
 }
 
   
