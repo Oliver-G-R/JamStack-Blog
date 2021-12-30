@@ -4,7 +4,7 @@ export const NavBar = () => {
             <header>
                 <nav>
                     <span>
-                        ogr
+                        Ogr
                     </span>
                     <ul>
                         <li>
@@ -36,8 +36,38 @@ export const NavBar = () => {
 
                     nav{
                         display: flex;
+                        padding: 2rem 4rem;
+                        align-items: center;
                         justify-content: space-between;
+
+                        ul{
+                            display: flex;
+                            gap: 2rem;
+                            li a{
+                                color: var(--description-color);
+                                font-size: 1.8rem;
+                                font-weight: 500;
+                            }
+                        }
+
+
                     }
+
+                    nav span{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: var(--bg-gradient);
+                        color: #fff;
+                        width: 4rem;
+                        font-weight: 300;
+                        font-size: 2rem;
+                        padding: 2.4rem;
+                        height: 4rem;
+                        border-radius: 50%;
+                    }
+
+                    
                 }
             `}</style>
         </>
