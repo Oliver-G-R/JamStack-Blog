@@ -16,3 +16,15 @@ imgCover: "https://somospnt.com/images/blog/cover/131-manejando-estados-con-vuex
 Vuex es una librería para el manejo del estado de tu aplicación,  
 permite que los componentes puedan comunicarse entre si de forma
 muy sencilla.  
+
+
+## ¿Cuándo usarlo?
+
+Podemos hacer uso de vuex siempre que veamos que nuestros componentes
+crecen en cantidad de props y anidamiento, de tal forma que si hay 
+componentes muy por debajo de otros y necessitamos que se actualicen
+cuando se cambien los valores de sus props, entonces vuex nos ayudará.  
+<br/>
+Un ejemplo sería si tenemos que controlar la sesión de un usuario,
+y la información que obtenemos hay que compartirla de forma global 
+entre todos los componentes. 

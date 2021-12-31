@@ -17,6 +17,7 @@ export const LayoutPost = ({ children, metadata }) => {
                     margin-top: 10rem;
                     display: flex;
                     flex-direction: column;
+                    padding-bottom: 3rem;
                 }
             `}</style>
         </>
