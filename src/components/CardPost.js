@@ -25,6 +25,12 @@ export const CardPost = ({
             </Link>
 
             <style jsx>{`
+                img{
+                    object-fit: cover;
+                    height: 200px;
+                    border-radius: 1rem;
+                    width: 100%;
+                }
                 div{
                     padding: 2rem 0;
                     span{
@@ -36,7 +42,6 @@ export const CardPost = ({
                     }
                     p{
                         color: var(--description-color);
-
                     }
                 }
                 .caratula{

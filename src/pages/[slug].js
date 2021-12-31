@@ -1,8 +1,12 @@
 import { MDXRemote } from 'next-mdx-remote'
 import { getAllMDXComponent, getMDXComponentBySlug } from 'lib/mdx'
+import MDXComponents from 'components/MDXComponents'
+import { LayoutPost } from 'components/MDXComponents/LayoutPost'
 
 export default function Post ({ source, frontMatter }) {
-  return <MDXRemote {...source} />
+  return <LayoutPost metadata={frontMatter}>
+    <MDXRemote {...source} components={MDXComponents} />
+  </LayoutPost>
 }
 
 export const getStaticProps = async ({ params }) => {

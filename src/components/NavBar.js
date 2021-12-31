@@ -5,9 +5,11 @@ export const NavBar = () => {
         <>
             <header>
                 <nav>
-                    <span>
-                        O
-                    </span>
+                   <Link href="/">
+                        <a className="logo">
+                            O
+                        </a>
+                   </Link>
                     <ul>
                         <li>
                             <Link href="/">
@@ -48,7 +50,7 @@ export const NavBar = () => {
                         }
                     }
 
-                    nav span{
+                    nav .logo{
                         display: flex;
                         justify-content: center;
                         align-items: center;

@@ -1,4 +1,4 @@
-export const GridPost = ({ children, title = 'Default Section Post Title' }) => {
+export const GridCardPost = ({ children, title = 'Default Section Post Title' }) => {
   return (
         <>
             <section className="spacing-section">

@@ -1,7 +1,7 @@
 import { getAllMDXComponentsMetadata } from 'lib/mdx'
 
 import { CardPost } from 'components/CardPost'
-import { GridPost } from 'components/GridPost'
+import { GridCardPost } from 'components/GridCardPost'
 import { HeadInfo } from 'components/HeadInfo'
 import { NavBar } from 'components/NavBar'
 
@@ -9,7 +9,10 @@ import { HomeStyles } from './HomeStyles'
 export default function Home ({ posts }) {
   return (
     <>
-    <HeadInfo title="JAMSTCK | BLOG" description="Web development blog" />
+      <HeadInfo metadata={{
+        title: 'JAMSTCK | BLOG',
+        description: 'Web development blog'
+      }} />
       <NavBar/>
       <div className="global-container">
         <section className="section-welcome spacing-section">
@@ -24,7 +27,7 @@ export default function Home ({ posts }) {
             <article className="section-welcome__info-course">
               <span>Martes 05 2021</span>
               <h2>
-                La herramienta  #1 para el desarrollo frontent
+                La herramienta  #1 para el desarrollo Front-end
               </h2>
               <p>
                 React es la mejor herramienta para el desarrollo de aplicaciones web.
@@ -35,19 +38,20 @@ export default function Home ({ posts }) {
         </section>
 
         <main>
-          <GridPost title="Últimos post añadidos" >
+          <GridCardPost title="Últimos post añadidos" >
             {
-              posts.map(({ title, date, slug, description }, id) => (
+              posts.map(({ title, date, slug, description, imgCover }, id) => (
                 <CardPost
                   key={id}
                   date={date}
                   title={title}
                   description={description}
+                  img={imgCover}
                   slug={slug}
                 />
               ))
             }
-          </GridPost>
+          </GridCardPost>
         </main>
       </div>
 
