@@ -6,6 +6,7 @@ import { HeadInfo } from 'components/HeadInfo'
 import { NavBar } from 'components/NavBar'
 
 import { HomeStyles } from './HomeStyles'
+import { ReactIcon } from 'assets/ReactIcon'
 export default function Home ({ posts }) {
   return (
     <>
@@ -20,8 +21,8 @@ export default function Home ({ posts }) {
               <h1>
                 Cursos de React desde $29.99
               </h1>
-              <div>
-
+              <div className="tech-container">
+                <ReactIcon/>
               </div>
             </article>
             <article className="section-welcome__info-course">

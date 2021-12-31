@@ -14,7 +14,11 @@ export const HomeStyles = css`
             font-size: 7rem;
             margin-bottom: 2rem;
         }
-        div{
+        .tech-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem;
             width: 100%;
             height: 500px;
             border-radius: 1rem;
