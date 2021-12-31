@@ -5,7 +5,7 @@ import { GridCardPost } from 'components/GridCardPost'
 import { HeadInfo } from 'components/HeadInfo'
 import { NavBar } from 'components/NavBar'
 
-import { HomeStyles } from './HomeStyles'
+import { HomeStyles } from '../styles/HomeStyles'
 import { ReactIcon } from 'assets/ReactIcon'
 export default function Home ({ posts }) {
   return (
